@@ -14,4 +14,4 @@
          :handler back-end.api/app
          :async? true
          :port 3001}
-  :profiles {:dev {:plugins [[lein-ring "0.12.2"]]}})
+  :profiles {:dev {:plugins [#_[lein-ring "0.12.2"]]}})

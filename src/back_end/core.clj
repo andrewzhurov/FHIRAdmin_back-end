@@ -1,4 +1,6 @@
-(ns back-end.core)
+(ns back-end.core
+  (:require
+   [korma.db :as db]))
 
 (def config
   {:jdbc-postgres {}
@@ -8,6 +10,6 @@
   (db/default-connection (db/create-db (db/postgres (get config :jdbc-postgres)))))
 
 (defn init []
-  (start-db config))
+  #_(start-db config))
 
 
